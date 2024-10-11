@@ -1,0 +1,10 @@
+/* 
+    외부 스타일을 이용해서 
+    container에게 스타일
+    배경 컬러를 yellow, boredr를 1px solid black; 
+*/
+
+    #container{
+      background-color: yellow;
+      border: 1px solid black;
+    }

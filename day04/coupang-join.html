@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>쿠팡 회원가입</title>
+</head>
+<body>
+
+  <!-- 쿠팡 로고(쿠팡 홈페이지 이동) -->
+    <h1 class="coupangLogo">
+      <a href="https://www.coupang.com/">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQIdFP9pCwEzjXypFr_pjRd0Uqb3ey3E4NBLg&s"
+          width="195" height="46">
+      </a>
+    </h1>
+
+    <div>
+      <div class="join-title">회원정보를 입력해주세요</div>
+
+       <!-- 회원가입 정보 입력 -->
+      <form id="joinFrom">
+
+        <div class="member-join">
+          <img src="/day04/img/mail.png" alt="아이디" width="20" height="16">
+          <input type="text" id="id" placeholder="아이디(이메일)"/>
+        </div>
+
+        <div class="member-join">
+          <img src="/day04/img/lock.png" alt="비밀번호" width="20" height="16"> 
+          <input type="password" id="password" placeholder="비밀번호" />
+        </div>
+
+        <div class="member-join">
+          <img src="/day04/img/lock.png" alt="비밀번호" width="20" height="16">
+          <input type="password" id="password" placeholder="비밀번호 확인" />
+        </div>
+
+        <div class="member-join">
+          <img src="/day04/img/person.png" alt="이름" width="20" height="16">
+          <input type="text" id="name" placeholder="이름" />
+        </div>
+
+        <div class="member-join">
+          <img src="/day04/img/phone.png" alt="휴대폰" width="20" height="16">
+          <input type="tel" id="phoneNumber" placeholder="휴대폰 번호" />
+        </div>
+      </form>
+    </div>
+
+    <hr>
+    
+    
+    <div class="all-check">
+      <label>
+        <input type="checkbox" class="all"/>
+        <span>모두 확인하였으며 동의합니다.</span>
+        <p>전체 동의에는 필수 및 선택 정보에 대한 동의가 포함되어 있으며, 개별적으로 동의를 선택 하실 수 있습니다. 
+          선택 항목에 대한 동의를 거부하시는 경우에도 서비스 이용이 가능합니다.</p>
+      </label>
+    </div>
+    <div class="check-list">
+      <ul>
+        <li class="check-list-li" style="list-style: none;;">
+          <div>
+            <label>
+              <input type="checkbox" />
+              <span>[필수] 만 14세 이상입니다</span>
+            </label>
+          </div>
+        </li>
+
+        <li class="check-list-li" style="list-style: none;;">
+          <div>
+            <label>
+              <input type="checkbox" />
+              <span>[필수] 쿠팡 이용약관 동의</span>
+            </label>
+          </div>
+        </li>
+        <li class="check-list-li" style="list-style: none;;">
+          <div>
+            <label>
+              <input type="checkbox" />
+              <span>[필수] 전자금융거래 이용약관 동의</span>
+            </label>
+          </div>
+        </li>
+        <li class="check-list-li" style="list-style: none;;">
+          <div>
+            <label>
+              <input type="checkbox" />
+              <span>[필수] 개인정보 수집 및 이용 동의</span>
+            </label>
+          </div>
+        </li>
+        <l1 class="check-list-li">
+          <div>
+            <label>
+              <input type="checkbox" />
+              <span>[필수] 개인정보 제3자 제공 동의</span>
+            </label>
+          </div>
+        </l1>
+        <l1 class="check-list-li">
+          <div>
+            <label>
+              <input type="checkbox" />
+              <span>[선택] 마케팅 목적의 개인정보 수집 및 이용 동의</span>
+            </label>
+          </div>
+        </l1>
+        <l1 class="check-list-li">
+          <div>
+            <label>
+              <input type="checkbox" />
+              <span>[선택] 광고성 정보 수신 동의</span>
+            </label>
+          </div>
+        </l1>
+        <l1 class="check-list-li">
+          <div>
+            <label>
+              <input type="checkbox" />
+              <span>[선택] 이메일 수신 동의</span>
+            </label>
+          </div>
+        </l1>
+        <l1 class="check-list-li">
+          <div>
+            <label>
+              <input type="checkbox" />
+              <span>[선택] SMS, SNS 수신 동의</span>
+            </label>
+          </div>
+        </l1>
+        <l1 class="check-list-li">
+          <div>
+            <label>
+              <input type="checkbox" />
+              <span>[선택] 앱 푸시 수신 동의</span>
+            </label>
+          </div>
+        </l1>
+      </ul>
+    </div>
+    <button>
+      동의하고 가입하기
+    </button>
+</body>
+</html>

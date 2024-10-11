@@ -1,0 +1,38 @@
+#container {
+  position: relative;
+}
+
+.image {
+  width: 1200px;
+  height: 700px;
+}
+
+.circle {
+  position: absolute;
+  width: 100px;
+}
+
+.circle01 {
+  top: 30%;
+  right: 53%;
+}
+
+.circle02 {
+  bottom: 5%;
+  right: 22%
+}
+
+.circle03 {
+  bottom: 25%;
+  right: 23%;
+}
+
+.circle04 {
+  top: 14%;
+  right: 40%;
+}
+
+.circle05 {
+  right: 39%;
+  bottom: 20%;
+}

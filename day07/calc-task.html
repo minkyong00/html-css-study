@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background-image 실습</title>
+  <style>
+    /* 이미지를 찾아서 크기를 비율에 맞게 화면에 보여주는 기술
+    1) image-wrapper 화면의 크기를 60%, 최대 크기는 1000px로 고정하기
+    2) image 화면에 비율에 맞게 background-image로 이미지를 삽입
+     */
+
+    #image-wrapper{
+      width: min(60%, 1000px);
+      margin: 0 auto;
+      /* aspect-ratio: 473 / 512; */
+    }
+
+    .image{
+      /* height: 100%; */
+      padding-top: calc(100% / 473 * 512);
+      background: center / 100% no-repeat url("./images/cat02.jpg");
+
+      /* background-position: center;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-image: url("./images/cat02.jpg"); */
+    }
+
+  </style>
+</head>
+<body>
+  <div id="image-wrapper">
+    <div class="image"></div>
+  </div>
+</body>
+</html>

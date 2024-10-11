@@ -1,0 +1,33 @@
+/* 사용 */
+/* #image { animation: twinkle 3s ease-in forwards; } */
+
+#image { animation: move-porori 5s ease-in forwards; }
+/* forwards : 마지막 opacity값을 유지 */
+
+/* 선언 */
+@keyframes twinkle {
+  form{ opacity: 1; }
+  to{ opacity: 0; }
+}
+
+@keyframes move-porori {
+  0% { transform: translate(0, 0); }
+  25% { transform: translate(200px, 0); }
+  50% { transform: translate(200px, 200px); }
+  75% { transform: translate(400px, 200px); }
+  100% { transform: rotate(300deg) translate(400px, 400px); }
+}
+
+
+/* @keyframes twinkle {
+  
+  1번 방법
+  form{}
+  to{}
+  
+  2번 방법
+  0%{}
+  50%{}
+  100%{}
+
+} */

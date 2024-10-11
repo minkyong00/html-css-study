@@ -1,0 +1,54 @@
+#container {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: orange;
+  animation: effect 2s infinite ease-in;
+}
+
+/* keyframes를 두 번 선언하는 방법 */
+
+@keyframes effect {
+  0% {transform: translate(0, 0);}
+  50% {transform: translate(0, 200px);}
+  100% {transform: translate(0, 0);}
+}
+
+
+
+@keyframes up-down {
+  0% {transform: translate(0, 0);}
+  50% {transform: translate(0, 200px);}
+  100% {transform: translate(0, 0);}
+}
+
+@keyframes left-right {
+  0% {transform: translate(0, 0);}
+  50% {transform: translate(200px, 0);}
+  100% {transform: translate(0, 0);}
+}
+
+
+/* 미디어 쿼리는 무조건 css 최하단에 선언을 한다. */
+@media screen and (min-width:0) and (max-width:700px) {
+  /* #container {animation: up-down 2s infinite ease-in;} */
+}
+
+@media screen and (min-width:701px) and (max-width:1200px) {
+  /* #container {animation: left-right 2s infinite ease-in-out;} */
+
+  /* 미디어 쿼리 내부에 keyframs를 다시 선언하는 방법 */
+  @keyframes effect {
+    0% {transform: translate(0, 0);}
+    50% {transform: translate(400px, 0);}
+    100% {transform: translate(0, 0);}
+  }
+}
+
+
+
+
+
+
+
+

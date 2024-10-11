@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flex-layout</title>
+  <style>
+    #layout {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    header {
+      width: 100%;
+      flex-grow: 1;
+      flex-shrink: 1;
+      background-color: green;
+    }
+
+    main {
+      width: 100%;
+      /* flex-grow: 3; /* 유동적으로 비율 정할 수 있음 
+      flex-shrink: 3; */
+      flex: 1;
+      /* flex : grow, shrink, basis : 비율 할당할 때 사용 */
+      background-color: purple;
+    }
+
+    footer {
+      width: 100%;
+      flex-grow: 1;
+      flex-shrink: 1;
+      background-color: cadetblue;
+    }
+  </style>
+</head>
+<body>
+    <div id="layout">
+      <header></header>
+      <main></main>
+      <footer></footer>
+    </div>
+</body>
+</html>

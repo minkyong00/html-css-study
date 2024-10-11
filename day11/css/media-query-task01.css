@@ -1,0 +1,37 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+}
+
+
+@media screen and (min-width:345px) and (max-width:767px) {
+  .box {
+    margin: 4px;
+  }
+}
+
+@media screen and (min-width:1280px) {
+
+  #container{
+    display: flex;
+    gap: 4px;
+  }
+
+  .box01 {
+    animation: up-down 1s infinite 0s ease-in;
+  }
+  .box02 {
+    animation: up-down 1s infinite 0.1s ease-in;
+  }
+  .box03 {
+    animation: up-down 1s infinite 0.2s ease-in;
+  }
+  
+  @keyframes up-down {
+    0%{transform: translate(0, 0);}
+    50%{transform: translate(0, 20px);}
+    100%{transform: translate(0, 0);}
+  }
+}
+
